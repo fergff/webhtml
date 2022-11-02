@@ -1,0 +1,255 @@
+
+body {
+    margin: 0;
+    background-color: rgb(175, 174, 185);
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(175, 174, 185);
+}
+header {
+    background-image: url(../img/cabezera.png);
+    background-size:contain;
+    background-position: center;
+    background-color: black;
+    height: 150px;
+}
+footer {
+    background-color: rgb(61, 61, 61);
+    color: rgb(224, 224, 224);
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#principal {
+    /* Hacemos flex para trabajar con la altura de mis hijos */
+    display: flex;
+}
+
+nav {
+    width: 20%;
+    float: left;
+}
+
+#content {
+    width: 80%;
+    float: right;
+    /* Altura igual que tu padre flex*/
+    flex: 1;
+    /* Hacemos flex para trabajar con la altura de mis hijos */
+    display: flex;
+}
+
+#home {
+    background-color:  rgb(175, 174, 185);
+    /* Altura igual que tu padre flex.
+    De esta forma hemos conseguido la altura del menu
+    aunque tenga menos contenido que él
+    */
+    flex: 1;
+    text-align: center;
+    padding-top: 40px;
+}
+.cb {
+    clear: both;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+nav ul li {
+   text-align: center;
+   color: black;
+   font-weight: bold;
+   padding: 18px 0;
+   border: dashed 2px white;
+}
+nav ul li:hover {
+    color:  white;
+    background-color: rgb(83, 83, 83);
+}
+#parrafos {
+    
+    background-color: beige;
+    flex: 1;
+    padding: 0px 30px;
+}
+#enlaces {
+    
+    background-color: rgb(199, 247, 201);
+    flex: 1;
+    padding: 0px 30px;
+}
+#listas {
+    
+    background-color: rgb(220, 226, 212);
+    flex: 1;
+    padding: 0px 30px;
+}
+#tablas {
+    
+    background-color: rgb(213, 221, 233);
+    flex: 1;
+    padding: 0px 30px;
+}
+#formulario {
+    
+    background-color: rgb(231, 192, 253);
+    flex: 1;
+    padding: 0px 30px;
+}
+#multimedia {
+
+    background-color: rgb(168, 216, 255);
+    flex: 1;
+    padding: 0px 30px;
+}
+#formulariohtml5{
+
+    background-color: rgb(250, 252, 136);
+    padding: 0px 30px;
+    flex:1;
+}
+
+
+#cajadiv{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(94, 107, 223);
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.tag{
+    color:red;
+    font-weight: bold;
+    font-size:22px;
+}
+.textoAzul{
+    color:blue;
+}
+
+/* simbolos custom  listas desordenadas */
+ul.customdesorden li {
+    list-style-type: square; 
+}
+ul.customdesorden li li {
+    list-style-type: disc; 
+}
+ul.customdesorden li li li  {
+    list-style-type: circle;    
+}
+
+/* simbolos custom  listas ordenadas */
+ol.customorden li {
+    list-style-type: upper-alpha; 
+ }
+ol.customorden li li {
+    list-style-type: lower-roman; 
+}
+ol.customorden li li li {
+    list-style-type: decimal; 
+}
+
+/* simbolos custom  listas ordenadas imagen */
+
+ol.customordenimagen li li {
+    list-style-image: url(/img/icono.png); 
+}
+ol.customordenimagen li li li {
+    list-style-image: none; 
+    list-style-type: upper-alpha; 
+}
+
+dt{
+    color:blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+table.header th{
+    color:rgb(119, 243, 243);
+    background-color: rgb(65, 65, 253);
+    font-size: 25px;
+}
+table.header td{
+    color:rgb(65, 65, 253);
+    background-color:rgb(119, 243, 243);
+}
+
+table.striped tr:nth-child(odd){
+
+    background-color:rgb(92, 135, 255); 
+}
+
+table.striped tr:nth-child(even){
+
+    background-color:rgb(92, 255, 146); 
+}
+
+table.horario{
+    text-align: center;
+    background-color: white;
+    color: #247b84;
+    font-size: 17px;
+}
+table.horario th{
+    color: #247b84;
+    font-size: 20px;
+}
+/* clases para cada una de las asignaturas */
+td.programacion{
+    color: black;
+    background-color:#ffd231;
+}
+td.marcas{
+    color: black;
+    background-color: #027eff;
+}
+td.ingles{
+    color: black;
+    background-color: #96dc96;
+}
+td.entornos{
+    color: black;
+    background-color:#bc7879;
+}
+td.datos{
+    color: black;
+    background-color:#7ffffe;
+}
+td.fol{
+    color: black;
+    background-color:#c9a0c8;
+}
+td.sisi{
+    color: black;
+    background-color:#00b95c;
+}
+
+form.registro{
+    background-color: azure;
+    padding: 15px;
+    width: 60%;
+}
+
+#textRango{
+    width: 25px;
+    text-align: center;
+}
+#formulariohtml5{
+    padding: 0 15px;
+}
+#formulariohtml5 form{
+    width: 50%;
+   margin: 0 auto;
+}
